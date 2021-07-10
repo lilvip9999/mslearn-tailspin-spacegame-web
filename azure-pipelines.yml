@@ -40,11 +40,11 @@ steps:
     feedsToUse: 'select'
     vstsFeed: '$(System.TeamProject)/TailSpin.Space.Web.Model'
     
-- task: DotNetCoreCLI@2
-  displayName: 'Restore project dependencies'
-  inputs:
-    command: 'restore'
-    projects: '**/*.csproj'
+# - task: DotNetCoreCLI@2
+#   displayName: 'Restore project dependencies'
+#   inputs:
+#     command: 'restore'
+#     projects: '**/*.csproj'
 
 # - task: DotNetCoreCLI@2
 #   displayName: 'Run unit tests - $(buildConfiguration)'
