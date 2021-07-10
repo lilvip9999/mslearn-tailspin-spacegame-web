@@ -38,13 +38,13 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-- task: DotNetCoreCLI@2
-  displayName: 'Run unit tests - $(buildConfiguration)'
-  inputs:
-    command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration)'
-    publishTestResults: true
-    projects: '**/*.Tests.csproj'
+# - task: DotNetCoreCLI@2
+#   displayName: 'Run unit tests - $(buildConfiguration)'
+#   inputs:
+#     command: 'test'
+#     arguments: '--no-build --configuration $(buildConfiguration)'
+#     publishTestResults: true
+#     projects: '**/*.Tests.csproj'
     
 - template: azure-build-template.yml
   parameters:
